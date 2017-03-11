@@ -1,4 +1,4 @@
-# special matrix object that can cache it´s inverse  
+# makeCacheMatrix (x)  creates special matrix object that can cache itÂ´s inverse  
 # inverse :=  matrix %*% inversematrix = unitymatrix
 #
 # Following the example makeVector an cachemean in the coursera course
@@ -63,7 +63,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
   
   # However - I think I did not really catch the point. 
-  # When inverting matrices interactively, there´s a matrix object and an object containing the inverted matrix
+  # When inverting matrices interactively, thereÂ´s a matrix object and an object containing the inverted matrix
   # both consume memory. Compute once and reuse the results as needed.
   #
   # When running in a sort of batch mode also the matrix and the inverse matrix are computed and stored.
